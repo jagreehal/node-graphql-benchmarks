@@ -7,7 +7,7 @@ const fastify_1 = __importDefault(require("fastify"));
 const fastify_gql_1 = __importDefault(require("fastify-gql"));
 const md5_1 = __importDefault(require("md5"));
 const nexus_1 = require("nexus");
-const { data } = require("../data");
+const data_1 = require("../lib/data");
 const app = fastify_1.default();
 exports.Author = nexus_1.objectType({
     name: "Author",
@@ -37,7 +37,7 @@ exports.Query = nexus_1.objectType({
             type: "Author",
             list: true,
             resolve: (_, {}) => {
-                return data;
+                return data_1.data;
             }
         });
     }

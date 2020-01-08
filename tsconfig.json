@@ -22,5 +22,5 @@
     "baseUrl": "."
   },
   "exclude": ["node_modules"],
-  "include": ["./lib/**/createTypeGraphQLSchema.ts", "./benchmarks/*.ts"]
+  "include": ["./lib/**/*.ts", "./benchmarks/*.ts"]
 }

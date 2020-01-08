@@ -2,7 +2,7 @@ import Fastify from "fastify";
 import GQL from "fastify-gql";
 import md5 from "md5";
 import { objectType } from "nexus";
-const { data } = require("../data");
+import { data } from "../lib/data";
 
 const app = Fastify();
 
